@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/app.css">
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-auth-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDpCFuluweCe0Yy2hJHw0UO-jNJQwrgkzw",
+            authDomain: "cijs65.firebaseapp.com",
+            projectId: "cijs65",
+            storageBucket: "cijs65.appspot.com",
+            messagingSenderId: "996027737576",
+            appId: "1:996027737576:web:6216b49b802ca6dffcb05d"
+        };
+        const firebaseApp = firebase.initializeApp(firebaseConfig);
+        const db = firebaseApp.firestore();
+        const auth = firebaseApp.auth();
+    </script>
+
+
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <!-- // action: điểm đến để xử lý khi form submit
+        nếu không khai báo action => mặc định action là trang hiện tại để xử lý form => có hiện tượng reload trang
+    <form action=""></form> -->
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
